@@ -1,4 +1,5 @@
-<header class="centered-navigation" role="banner" ng-controller="NavCtrl">
+<div ng-controller="IndexCtrl" class="landing-section">
+	<header class="centered-navigation" role="banner" ng-controller="NavCtrl">
   <div class="centered-navigation-wrapper">
     <a href="javascript:void(0)" class="mobile-logo">
       <img src="../img/heart.png" alt="Heart">
@@ -6,7 +7,7 @@
     <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
     <nav role="navigation">
       <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-        <li class="nav-link"><a href="javascript:void(0)">Wedding</a></li>
+        <li class="nav-link"><a ng-click="scrollTo('wedding-section')">Wedding</a></li>
         <li class="nav-link"><a href="javascript:void(0)">RSVP</a></li>
         <li class="nav-link"><a href="javascript:void(0)">Accomodations</a></li>
         <li class="nav-link logo">
@@ -22,7 +23,7 @@
   </div>
 </header>
 
-
-<div ng-controller="IndexCtrl">
-	
+</div>
+<div id="wedding-section">
+	<p>Wedding section</p>
 </div>

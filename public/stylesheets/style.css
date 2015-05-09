@@ -192,15 +192,16 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-html {
+.landing-section {
   background: url(../../img/wedding.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 1000px; }
   @media screen and (max-width: 768px) {
-    html {
-      background: url(../../img/wedding-small.jpg) no-repeat center center fixed; } }
+    .landing-section {
+      background: url(../../img/wedding-small.jpg) no-repeat center top fixed; } }
 
 .centered-navigation {
   background-color: #fff;
@@ -267,7 +268,8 @@ html {
         text-align: center; } }
   @media screen and (min-width: 53.75em) {
     .centered-navigation .nav-link:first-child {
-      margin-left: 2.2em; } }
+      margin-left: 2.2em;
+      cursor: pointer; } }
   .centered-navigation ul li.nav-link {
     background: #fff;
     opacity: 0.9;
@@ -381,4 +383,5 @@ html {
             text-align: left;
             width: 12em; } }
 
-/*# sourceMappingURL=style.css.map */
+#wedding-section {
+  height: 900px; }
