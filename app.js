@@ -11,6 +11,8 @@ var app = module.exports = express.createServer();
 
 // Configuration
 
+app.use(express.favicon(__dirname + '/public/views/favicon.ico')); 
+
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'ejs');

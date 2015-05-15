@@ -11,6 +11,7 @@ var options = {
 
 var serverFiles = [
     'public/js/*.js',
+    'public/views/*.ejs',
     'public/stylesheets/**/*.scss'
 ];
 

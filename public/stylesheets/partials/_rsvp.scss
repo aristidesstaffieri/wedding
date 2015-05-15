@@ -1,0 +1,67 @@
+#rsvp-section {
+	 background: aliceblue;
+}
+
+.field--wrapper {
+  position:relative;
+  margin-bottom:20px;
+}
+label {
+  position:absolute;
+  top:-13px;
+  left:0;
+  font-size:11px;
+  color:#aaa;
+  transition: all 0.1s linear;
+  opacity:0;
+  font-weight:bold;
+}
+label.on {
+  color:#4481C4;
+}
+label.show {
+  top:-15px;
+  opacity:1;
+}
+
+body {
+  /* the following line fixes a blink in chrome https://code.google.com/p/chromium/issues/detail?id=108025 */
+  -webkit-backface-visibility: hidden;
+}
+.name-label {
+
+}
+
+.name-input {
+
+}
+.wedding-info-container {
+  @include outer-container;
+  max-width: 78em;
+  .rsvp-form-container {
+    @include span-columns(6);
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+}
+.rsvp-section-input-container {
+  border-bottom: 4px solid #a3a3a3;
+  padding-bottom: 3%;
+}
+input, label {
+  border: none;
+  background-color: transparent;
+}
+input:focus {
+  outline-color: transparent;
+  outline: 0;
+}
+.send-rsvp-btn {
+  @include button(flat, $action-color);
+  float: right;
+}
+.btn-wrapper {
+  padding: 1.5em;
+  @include clearfix();
+}

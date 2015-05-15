@@ -1,4 +1,24 @@
 
 #wedding-section {
-	height: 900px;
+	padding-bottom: 100px;
+}
+
+.wedding-title-text {
+	font-family: 'Rouge Script', cursive;
+	font-size: 10vw;
+	font-weight: 500;
+	padding: 3% 3% 0 3%;
+	display: inline-block;
+  	margin-bottom: 1%;
+  	margin-right: 30%;
+}
+.wedding-info-text {
+	font-size: 2vw;
+	font-weight: 200;
+	padding: 3%;
+}
+
+#wedding-svg {
+	width: 10%;
+	height: 10%;
 }

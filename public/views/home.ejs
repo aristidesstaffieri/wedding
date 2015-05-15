@@ -1,29 +1,124 @@
 <div ng-controller="IndexCtrl" class="landing-section">
 	<header class="centered-navigation" role="banner" ng-controller="NavCtrl">
-  <div class="centered-navigation-wrapper">
-    <a href="javascript:void(0)" class="mobile-logo">
-      <img src="../img/heart.png" alt="Heart">
-    </a>
-    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
-    <nav role="navigation">
-      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-        <li class="nav-link"><a ng-click="scrollTo('wedding-section')">Wedding</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">RSVP</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Accomodations</a></li>
-        <li class="nav-link logo">
-          <a href="javascript:void(0)" class="logo">
-            <img src="../img/heart.png" alt="Heart">
-          </a>
-        </li>
-        <li class="nav-link"><a href="javascript:void(0)">Registry</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Venue</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+		<div class="centered-navigation-wrapper">
+			<a href="javascript:void(0)" class="mobile-logo">
+				<img src="../img/heart.png" alt="Heart">
+			</a>
+			<a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+			<nav role="navigation">
+				<ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+					<li class="nav-link"><a href="#wedding-section" class="scroll-on-page-link">Wedding</a></li>
+					<li class="nav-link"><a href="#rsvp-section" class="scroll-on-page-link">RSVP</a></li>
+					<li class="nav-link logo">
+						<a href="javascript:void(0)" class="logo">
+							<img src="../img/heart.png" alt="Heart">
+						</a>
+					</li>
+					<li class="nav-link"><a href="#accomodations-section" class="scroll-on-page-link">Accomodations</a></li>
+					<li class="nav-link"><a href="#registry-section" class="scroll-on-page-link">Registry</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 </div>
 <div id="wedding-section">
-	<p>Wedding section</p>
+	<div class="wedding-title-container">
+		<h1 class="wedding-title-text">The Wedding</h1>
+		<span id="wedding-svg-container">
+			<svg id="wedding-svg" viewBox="0 0 200 175"/>
+		</span>
+	</div>
+	<div class="wedding-info-container">
+		<p class="wedding-info-text">The wedding will be held at <a href="http://www.hudsongardens.org/">The Hudson Gardens</a> in Littleton, Colorado on August 27th, 2015. The ceremony starts at 6:00pm and the venue is located at <a href="https://www.google.com/maps/place/6115+S+Santa+Fe+Dr,+Littleton,+CO+80120/@39.605379,-105.0213347,17z/data=!3m1!4b1!4m2!3m1!1s0x876c81d044459e75:0x8e999f5d41536c94">6115 South Santa Fe Drive, Littleton, CO 80120.</a> The ceremony and reception will both be held at the Hudson Gardens, there are two hotels nearby that can provide shuttle service to and from the venue. <b>We couldn't be more excited to celebrate with everyone!</b></p>
+	</div>
+</div>
+<div id="rsvp-section">
+	<div class="wedding-title-container">
+		<h1 class="wedding-title-text">RSVP</h1>
+	</div>
+	<div class="wedding-info-container">
+		<p class="wedding-info-text">Let us know if you're coming, and who's coming with you. You can also RSVP by mailing back the RSVP cards provided with the invitations. The password was included in your invitation insert and is good for both RSVP's and song requests, dont be shy!</p>
+		<section class="rsvp-form-container">
+			<div id="rsvp-input-section">
+				<div class="field--wrapper">
+					<fieldset>
+						<form autocomplete="off">
+							<p class="rsvp-section-input-container">
+								<label for="fname" class="name-label">Your Name</label>
+								<input name="fname" placeholder="Your Name" class="name-input" />
+							</p>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+			<div id="song-request-section">
+				<div class="field--wrapper">
+					<fieldset>
+						<form autocomplete="off">
+							<p class="rsvp-section-input-container">
+								<label for="songName" class="name-label">Song Name</label>
+								<input name="songName" placeholder="Song Name" class="name-input" />
+							</p>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+			<div id="password-section">
+				<div class="field--wrapper">
+					<fieldset>
+						<form autocomplete="off">
+							<p class="rsvp-section-input-container">
+								<label for="passWord" class="name-label">Password</label>
+								<input name="passWord" placeholder="Password" class="name-input" />
+							</p>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+		</section>
+		<section class="rsvp-form-container">
+			<div id="rsvp-input-section">
+				<div class="field--wrapper">
+					<fieldset>
+						<form autocomplete="off">
+							<p class="rsvp-section-input-container">
+								<label for="guestsNames" class="name-label">Name of Guest(s)</label>
+								<input name="guestsNames" placeholder="Name of Guest(s)" class="name-input" />
+							</p>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+			<div id="song-request-section">
+				<div class="field--wrapper">
+					<fieldset>
+						<form autocomplete="off">
+							<p class="rsvp-section-input-container">
+								<label for="artistName" class="name-label">Name of Artist</label>
+								<input name="artistName" placeholder="Name of Artist" class="name-input" />
+							</p>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+			<div class="send-btn-section">
+				<div class="btn-wrapper">
+					<div class="send-rsvp-btn">Send</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+<div id="accomodations-section">
+	<div class="wedding-title-container">
+		<h1 class="wedding-title-text">Accomodations</h1>
+	</div>
+	<div class="wedding-info-container">
+		<p class="wedding-info-text">For our out of town and guests and anyone who will lives far from Littleton, we blocked off rooms at two different hotels nearby. Both of the hotels provide a complementary shuttle service for any wedding guests on the night of the wedding. Also, both hotels are about equal distance from the venue, but only one has a bar (HOTEL WITH BAR).
+	</div>
+</div>
+<div id="registry-section">
+	<div class="wedding-title-container">
+		<h1 class="wedding-title-text">Registry</h1>
+	</div>
 </div>
