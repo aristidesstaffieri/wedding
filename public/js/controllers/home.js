@@ -45,6 +45,12 @@ angular.module('smsTest')
 			s.append(f.select('defs'));
 		});
 
+		var rsvp = Snap('#rsvp-svg');
+		Snap.load('./img/rsvp-section-icon.svg', function(f) {
+			rsvp.append(f.select('g'));
+			rsvp.append(f.select('defs'));
+		});
+
 		// RSVP, make controller
 
 		$j(function(){

@@ -243,6 +243,9 @@ html {
       .scroll-on-page article:last-child {
         margin-right: 0; } }
 
+input {
+  width: 100%; }
+
 .centered-navigation {
   background-color: #fff;
   border-bottom: 1px solid #fff;
@@ -454,7 +457,7 @@ html {
 label {
   position: absolute;
   top: -13px;
-  left: 0;
+  left: 27px;
   font-size: 11px;
   color: #aaa;
   transition: all 0.1s linear;
@@ -462,7 +465,7 @@ label {
   font-weight: bold; }
 
 label.on {
-  color: #4481C4; }
+  color: #a3a3a3; }
 
 label.show {
   top: -15px;
@@ -520,7 +523,11 @@ input:focus {
   padding: 7px 18px;
   text-decoration: none;
   background-clip: padding-box;
-  float: right; }
+  float: right;
+  margin-top: 4px;
+  background-color: transparent;
+  border: 3px solid #a3a3a3;
+  color: #a3a3a3; }
   .send-rsvp-btn:hover:not(:disabled) {
     background-color: #578ad4;
     cursor: pointer; }
@@ -530,6 +537,10 @@ input:focus {
   .send-rsvp-btn:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
+  .send-rsvp-btn:hover {
+    background-color: transparent !important;
+    border: 3px solid #af78c7;
+    color: #af78c7; }
 
 .btn-wrapper {
   padding: 1.5em; }
@@ -537,6 +548,12 @@ input:focus {
     clear: both;
     content: "";
     display: table; }
+
+#rsvp-svg {
+  width: 10%; }
+
+.rsvp-title {
+  margin-right: 46%; }
 
 #accomodations-section {
   background: #af78c7; }

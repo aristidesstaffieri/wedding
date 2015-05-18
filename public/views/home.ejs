@@ -34,7 +34,10 @@
 </div>
 <div id="rsvp-section">
 	<div class="wedding-title-container">
-		<h1 class="wedding-title-text">RSVP</h1>
+		<h1 class="wedding-title-text rsvp-title">RSVP</h1>
+		<span id="rsvp-svg-container">
+			<svg id="rsvp-svg" viewBox="0 0 200 200"/>
+		</span>
 	</div>
 	<div class="wedding-info-container">
 		<p class="wedding-info-text">Let us know if you're coming, and who's coming with you. You can also RSVP by mailing back the RSVP cards provided with the invitations. The password was included in your invitation insert and is good for both RSVP's and song requests, dont be shy!</p>
@@ -42,10 +45,10 @@
 			<div id="rsvp-input-section">
 				<div class="field--wrapper">
 					<fieldset>
-						<form autocomplete="off">
+						<form autocomplete="off" novalidate>
 							<p class="rsvp-section-input-container">
 								<label for="fname" class="name-label">Your Name</label>
-								<input name="fname" placeholder="Your Name" class="name-input" />
+								<input name="fname" placeholder="Your Name" class="name-input" required/>
 							</p>
 						</form>
 					</fieldset>
@@ -54,10 +57,10 @@
 			<div id="song-request-section">
 				<div class="field--wrapper">
 					<fieldset>
-						<form autocomplete="off">
+						<form autocomplete="off" novalidate>
 							<p class="rsvp-section-input-container">
-								<label for="songName" class="name-label">Song Name</label>
-								<input name="songName" placeholder="Song Name" class="name-input" />
+								<label for="songName" class="name-label">Song Request</label>
+								<input name="songName" placeholder="Song Request" class="name-input" />
 							</p>
 						</form>
 					</fieldset>
@@ -66,10 +69,10 @@
 			<div id="password-section">
 				<div class="field--wrapper">
 					<fieldset>
-						<form autocomplete="off">
+						<form autocomplete="off" novalidate>
 							<p class="rsvp-section-input-container">
 								<label for="passWord" class="name-label">Password</label>
-								<input name="passWord" placeholder="Password" class="name-input" />
+								<input name="passWord" placeholder="Password" class="name-input" required/>
 							</p>
 						</form>
 					</fieldset>
@@ -80,10 +83,10 @@
 			<div id="rsvp-input-section">
 				<div class="field--wrapper">
 					<fieldset>
-						<form autocomplete="off">
+						<form autocomplete="off" novalidate>
 							<p class="rsvp-section-input-container">
 								<label for="guestsNames" class="name-label">Name of Guest(s)</label>
-								<input name="guestsNames" placeholder="Name of Guest(s)" class="name-input" />
+								<input name="guestsNames" placeholder="Name of Guest(s)" class="name-input" required/>
 							</p>
 						</form>
 					</fieldset>
@@ -92,7 +95,7 @@
 			<div id="song-request-section">
 				<div class="field--wrapper">
 					<fieldset>
-						<form autocomplete="off">
+						<form autocomplete="off" novalidate>
 							<p class="rsvp-section-input-container">
 								<label for="artistName" class="name-label">Name of Artist</label>
 								<input name="artistName" placeholder="Name of Artist" class="name-input" />
@@ -114,11 +117,14 @@
 		<h1 class="wedding-title-text">Accomodations</h1>
 	</div>
 	<div class="wedding-info-container">
-		<p class="wedding-info-text">For our out of town and guests and anyone who will lives far from Littleton, we blocked off rooms at two different hotels nearby. Both of the hotels provide a complementary shuttle service for any wedding guests on the night of the wedding. Also, both hotels are about equal distance from the venue, but only one has a bar (HOTEL WITH BAR).
+		<p class="wedding-info-text">For our out of town and guests and anyone who will lives far from Littleton, we blocked off rooms at two different hotels nearby. Both of the hotels provide a complementary shuttle service for any wedding guests on the night of the wedding. Make sure to mention that you are part of the <b>Healy - Staffieri Wedding</b> to get discounted rates.
 	</div>
 </div>
 <div id="registry-section">
 	<div class="wedding-title-container">
 		<h1 class="wedding-title-text">Registry</h1>
+	</div>
+	<div class="wedding-info-container">
+		<p class="wedding-info-text">If you're inclined to bring a gift with you, check out our registries for suggestions. 
 	</div>
 </div>

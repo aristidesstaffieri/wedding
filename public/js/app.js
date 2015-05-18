@@ -4,7 +4,7 @@ angular.module('smsTest', [
 	'ngRoute',
 	'firebase'
 ])
-.constant('FIREBASE_URL', 'https://sms-test-twil.firebaseio.com/')
+.constant('FIREBASE_URL', 'https://moandstides.firebaseio.com/')
 .config(['$routeProvider', '$locationProvider', '$logProvider', 
 	function ($routeProvider, $locationProvider, $logProvider) {
 	$routeProvider
