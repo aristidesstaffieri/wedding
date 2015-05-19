@@ -1,5 +1,6 @@
 #rsvp-section {
 	 background: aliceblue;
+       padding-bottom: 100px;
 }
 
 .field--wrapper {
@@ -27,13 +28,6 @@ label.show {
 body {
   /* the following line fixes a blink in chrome https://code.google.com/p/chromium/issues/detail?id=108025 */
   -webkit-backface-visibility: hidden;
-}
-.name-label {
-
-}
-
-.name-input {
-
 }
 .wedding-info-container {
   @include outer-container;

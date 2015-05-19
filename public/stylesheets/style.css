@@ -431,7 +431,7 @@ input {
 
 .wedding-title-text {
   font-family: 'Rouge Script', cursive;
-  font-size: 10vw;
+  font-size: 12vw;
   font-weight: 500;
   padding: 3% 3% 0 3%;
   display: inline-block;
@@ -439,7 +439,7 @@ input {
   margin-right: 30%; }
 
 .wedding-info-text {
-  font-size: 2vw;
+  font-size: 100%;
   font-weight: 200;
   padding: 3%; }
 
@@ -448,7 +448,8 @@ input {
   height: 10%; }
 
 #rsvp-section {
-  background: aliceblue; }
+  background: aliceblue;
+  padding-bottom: 100px; }
 
 .field--wrapper {
   position: relative;
@@ -556,7 +557,147 @@ input:focus {
   margin-right: 46%; }
 
 #accomodations-section {
-  background: #af78c7; }
+  background: #af78c7;
+  padding-bottom: 100px; }
+
+.cards {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  padding: 1.5%; }
+
+.card {
+  -webkit-flex-basis: 15em;
+  -moz-flex-basis: 15em;
+  flex-basis: 15em;
+  -ms-flex-preferred-size: 15em;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 1px #e6e6e6;
+  margin: 0 1em 1.5em 1em;
+  position: relative; }
+  .card .card-image {
+    overflow: hidden;
+    max-height: 150px; }
+    .card .card-image img {
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block; }
+    .card .card-image .holiday-inn-logo {
+      width: 75%;
+      padding-top: 30px;
+      padding-bottom: 30px; }
+    .card .card-image .hampton-inn-logo {
+      width: 40%;
+      padding-bottom: 10px;
+      padding-top: 10px; }
+  .card .card-header {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid #ddd;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0.5em 0.75em; }
+  .card .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: 0.75em 0.75em;
+    overflow-wrap: break-word; }
+    .card .card-copy p {
+      margin: 0 0 0.75em; }
+
+#accomodations-svg {
+  width: 10%; }
+
+.accomodations-title {
+  margin-right: 23.5%; }
 
 #registry-section {
   background: #abddc6; }
+
+#registry-svg {
+  width: 10%; }
+
+.registry-title {
+  margin-right: 44%; }
+
+.registry-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .registry-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .registry-container .registry-item {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%; }
+    .registry-container .registry-item:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 500px) {
+      .registry-container .registry-item {
+        float: left;
+        display: block;
+        margin-right: 6.66667%;
+        width: 100%; }
+        .registry-container .registry-item:last-child {
+          margin-right: 0; } }
+
+.registry-item img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 50px; }
+
+.rei-logo {
+  width: 47% !important; }
+
+.footer {
+  min-height: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #333333; }
+
+.footer-text {
+  text-align: center;
+  margin: 0;
+  font-family: 'Rouge Script', cursive;
+  font-size: 2em; }

@@ -51,6 +51,18 @@ angular.module('smsTest')
 			rsvp.append(f.select('defs'));
 		});
 
+		var accomodations = Snap('#accomodations-svg');
+		Snap.load('./img/accomodations-section-icon.svg', function(f) {
+			accomodations.append(f.select('g'));
+			accomodations.append(f.select('defs'));
+		});
+
+		var registry = Snap('#registry-svg');
+		Snap.load('./img/registry-section-icon.svg', function(f) {
+			registry.append(f.select('g'));
+			registry.append(f.select('defs'));
+		});
+
 		// RSVP, make controller
 
 		$j(function(){

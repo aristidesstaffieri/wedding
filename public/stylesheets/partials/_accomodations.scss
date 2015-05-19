@@ -1,3 +1,111 @@
 #accomodations-section {
 	 background: tint($bride-purple, 40%);
+	 padding-bottom: 100px;
+}
+.cards {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  padding: 1.5%;
+}
+
+.card {
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $base-link-color: $action-color !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $dark-gray !default;
+  $card-border-color: $base-border-color;
+  $card-border: 1px solid $card-border-color;
+  $card-background: lighten($card-border-color, 10%);
+  $card-header-background: $card-background;
+  $card-hover-background: lighten($card-background, 5%);
+  $card-image-background: #DBD199;
+  $card-image-hover-background: lighten($card-image-background, 5%);
+  $card-margin: 1em;
+
+  @include flex-basis(15em);
+  @include flex-grow(1);
+  @include transition (all 0.2s ease-in-out);
+  background-color: $base-background-color;
+  border-radius: $base-border-radius;
+  border: $card-border;
+  box-shadow: 2px 2px 1px darken($base-background-color, 10%);
+  margin: 0 $card-margin $base-spacing $card-margin;
+  position: relative;
+
+  .card-image {
+    overflow: hidden;
+    max-height: 150px;
+
+    img {
+      @include transition (all 0.2s ease-in-out);
+      
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    .holiday-inn-logo {
+      	width: 75%;
+      	padding-top: 30px;
+  	      padding-bottom: 30px;
+      }
+      .hampton-inn-logo {
+      	width: 40%;
+      	padding-bottom: 10px;
+  	      padding-top: 10px;
+      }
+  }
+
+  .card-header {
+    @include transition (all 0.2s ease-in-out);
+        border-bottom: $card-border;
+        border-radius: $base-border-radius $base-border-radius 0 0;
+        font-weight: bold;
+        line-height: 1.5em;
+        padding: ($base-spacing / 3) ($base-spacing / 2);
+  }
+
+  .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: ($base-spacing / 2) ($base-spacing / 2);
+    overflow-wrap: break-word;
+    p {
+      margin: 0 0 ($base-spacing / 2);
+    }
+  }
+  
+  &:focus,
+  &:hover {
+    
+    
+    .card-image img {
+    	
+    }
+  
+    .card-header {
+     
+    }
+  }
+
+  &:active {
+    
+
+    .card-header {
+      
+    }
+  }
+}
+
+#accomodations-svg {
+  width: 10%;
+}
+.accomodations-title {
+  margin-right: 23.5%;
 }
