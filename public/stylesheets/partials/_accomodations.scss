@@ -1,6 +1,5 @@
 #accomodations-section {
-	 background: tint($bride-purple, 40%);
-	 padding-bottom: 100px;
+       background: radial-gradient(circle at 50% 30%,tint($bride-purple, 40%) 20%,tint($bride-purple, 30%) 120%,tint($bride-purple, 20%));
 }
 .cards {
   @include display(flex);
@@ -10,7 +9,7 @@
 }
 
 .card {
-  $base-border-color: gainsboro !default;
+  $base-border-color: #7e3f94 !default;
   $base-border-radius: 3px !default;
   $base-background-color: white !default;
   $base-spacing: 1.5em !default;
@@ -32,15 +31,17 @@
   @include transition (all 0.2s ease-in-out);
   background-color: $base-background-color;
   border-radius: $base-border-radius;
-  border: $card-border;
-  box-shadow: 2px 2px 1px darken($base-background-color, 10%);
+  // border: $card-border;
+  // box-shadow: 2px 2px 1px darken($base-background-color, 10%);
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
+  box-shadow: 0 2px 4px #19212a;
 
   .card-image {
     overflow: hidden;
     max-height: 150px;
-
+    background: linear-gradient(0deg,#7e3f94,#9349ac),no-repeat #9349ac scroll;
+    border-bottom: 4px solid #6a357c;
     img {
       @include transition (all 0.2s ease-in-out);
       
@@ -51,9 +52,9 @@
       display: block;
     }
     .holiday-inn-logo {
-      	width: 75%;
-      	padding-top: 30px;
-  	      padding-bottom: 30px;
+      	width: 55%;
+      	padding-top: 40px;
+  	      padding-bottom: 40px;
       }
       .hampton-inn-logo {
       	width: 40%;
@@ -64,11 +65,10 @@
 
   .card-header {
     @include transition (all 0.2s ease-in-out);
-        border-bottom: $card-border;
-        border-radius: $base-border-radius $base-border-radius 0 0;
         font-weight: bold;
         line-height: 1.5em;
         padding: ($base-spacing / 3) ($base-spacing / 2);
+        border-bottom: none;
   }
 
   .card-copy {
@@ -107,5 +107,8 @@
   width: 10%;
 }
 .accomodations-title {
-  margin-right: 23.5%;
+  margin-right: 21%;
+}
+.accomodations-link {
+  color: tint($bride-purple, 40%);
 }

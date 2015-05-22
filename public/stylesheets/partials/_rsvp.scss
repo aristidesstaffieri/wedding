@@ -1,6 +1,5 @@
 #rsvp-section {
 	 background: aliceblue;
-       padding-bottom: 100px;
 }
 
 .field--wrapper {
@@ -32,6 +31,8 @@ body {
 .wedding-info-container {
   @include outer-container;
   max-width: 78em;
+  padding-top: 20px;
+  padding-bottom: 30px;
   .rsvp-form-container {
     @include span-columns(6);
     @include media($mobile) {
@@ -58,6 +59,7 @@ input:focus {
   background-color: transparent;
   border: 3px solid #a3a3a3;
   color: #a3a3a3;
+  @include transition (all 0.2s ease-in-out);
   &:hover {
     background-color: transparent !important;
     border: 3px solid #af78c7;

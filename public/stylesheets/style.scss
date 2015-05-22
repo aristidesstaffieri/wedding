@@ -16,11 +16,15 @@ $bride-purple: #7B1FA2;
 
 //Fonts
 @import url(http://fonts.googleapis.com/css?family=Rouge+Script);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 // Global styles
 
 html {
 	font-size: 16px; // 1 rem
+}
+p, input, label, select {
+  font-family: 'Montserrat', sans-serif;
 }
 .landing-section { 
   background: url(../../img/wedding.jpg) no-repeat center center fixed; 
@@ -46,7 +50,7 @@ html {
   display: inline-block;
 
   a {
-    color: $base-link-color;
+    color: tint($bride-purple, 40%) !important;
     text-decoration: none;
   }
 
@@ -91,7 +95,9 @@ input {
   width: 100%;
 }
 
-// Based on code by http://codepen.io/xmark/
+.wedding-title-container {
+  padding-top: 20px;
+}
 
 
 @import 'partials/nav';
