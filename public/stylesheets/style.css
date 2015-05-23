@@ -208,7 +208,8 @@ p, input, label, select {
   min-height: 1000px; }
   @media screen and (max-width: 768px) {
     .landing-section {
-      background: url(../../img/wedding-small.jpg) no-repeat center top fixed; } }
+      background: url(../../img/wedding-small.jpg) no-repeat center top fixed;
+      min-height: 740px; } }
 
 .scroll-on-page {
   display: inline-block; }
@@ -251,7 +252,63 @@ input {
   width: 100%; }
 
 .wedding-title-container {
-  padding-top: 20px; }
+  padding-top: 20px;
+  max-width: 78em !important;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wedding-title-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .wedding-title-container .wedding-title {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 74.46809%; }
+    .wedding-title-container .wedding-title:last-child {
+      margin-right: 0; }
+  .wedding-title-container #wedding-svg-container {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    margin-top: 20px; }
+    .wedding-title-container #wedding-svg-container:last-child {
+      margin-right: 0; }
+  .wedding-title-container #rsvp-svg-container {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    margin-top: 40px; }
+    .wedding-title-container #rsvp-svg-container:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .wedding-title-container #rsvp-svg-container {
+        margin-top: 10px; } }
+  .wedding-title-container #accomodations-svg-container {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    margin-top: 20px; }
+    .wedding-title-container #accomodations-svg-container:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .wedding-title-container #accomodations-svg-container {
+        margin-top: 10px; } }
+  .wedding-title-container #registry-svg-container {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    margin-top: 50px; }
+    .wedding-title-container #registry-svg-container:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .wedding-title-container #registry-svg-container {
+        margin-top: 15px; } }
 
 .centered-navigation {
   background-color: #fff;
@@ -440,7 +497,6 @@ input {
   padding: 3% 3% 0 3%;
   display: inline-block;
   margin-bottom: 1%;
-  margin-right: 25%;
   text-shadow: 2.2px 2.2px 4px black, 1px 2px 0 black; }
 
 .wedding-info-text {
@@ -449,8 +505,8 @@ input {
   padding: 3%; }
 
 #wedding-svg {
-  width: 10%;
-  height: 10%; }
+  width: 50%;
+  height: 50%; }
 
 .wedding-link {
   color: #af78c7; }
@@ -563,10 +619,7 @@ input:focus {
     display: table; }
 
 #rsvp-svg {
-  width: 10%; }
-
-.rsvp-title {
-  margin-right: 46%; }
+  width: 50%; }
 
 #accomodations-section {
   background: radial-gradient(circle at 50% 30%, #af78c7 20%, #a262bd 120%, #954bb4); }
@@ -653,10 +706,7 @@ input:focus {
       margin: 0 0 0.75em; }
 
 #accomodations-svg {
-  width: 10%; }
-
-.accomodations-title {
-  margin-right: 21%; }
+  width: 50%; }
 
 .accomodations-link {
   color: #af78c7; }
@@ -665,7 +715,7 @@ input:focus {
   background: #abddc6; }
 
 #registry-svg {
-  width: 10%; }
+  width: 50%; }
 
 .registry-title {
   margin-right: 44%;
@@ -674,7 +724,8 @@ input:focus {
 .registry-container {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  max-width: 78em !important; }
   .registry-container::after {
     clear: both;
     content: "";
@@ -683,7 +734,8 @@ input:focus {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 48.93617%; }
+    width: 48.93617%;
+    padding: 6%; }
     .registry-container .registry-item:last-child {
       margin-right: 0; }
     @media screen and (max-width: 500px) {
@@ -716,3 +768,12 @@ input:focus {
   margin: 0;
   font-family: 'Rouge Script', cursive;
   font-size: 2em; }
+
+.registry-svg svg #bbb, .registry-svg svg #rei {
+  transition: 500ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 500ms;
+  -webkit-transition-timing-function: ease-in-out; }
+
+.registry-svg svg:hover #bbb, .registry-svg svg #rei:hover {
+  fill: aliceblue; }

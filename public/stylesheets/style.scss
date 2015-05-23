@@ -35,6 +35,7 @@ p, input, label, select {
   min-height: 1000px;
   @media screen and (max-width: $break-small) {
   	background: url(../../img/wedding-small.jpg) no-repeat center top fixed; 
+      min-height: 740px;
   }
 }
 
@@ -97,6 +98,37 @@ input {
 
 .wedding-title-container {
   padding-top: 20px;
+  max-width: 78em !important;
+  @include outer-container;
+  .wedding-title {
+    @include span-columns(9);
+  }
+  #wedding-svg-container {
+    @include span-columns(3);
+     margin-top: 20px;
+  }
+  #rsvp-svg-container {
+    @include span-columns(3);
+    @media screen and (max-width: $break-small) {
+         margin-top: 10px;
+    }
+     margin-top: 40px;
+  }
+  #accomodations-svg-container {
+    @include span-columns(3);
+      @media screen and (max-width: $break-small) {
+         margin-top: 10px;
+        }
+         margin-top: 20px;
+      }
+  #registry-svg-container {
+      @include span-columns(3);
+      @media screen and (max-width: $break-small) {
+         margin-top: 15px;
+        }
+         margin-top: 50px;
+      }
+  
 }
 
 

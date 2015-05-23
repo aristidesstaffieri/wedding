@@ -2,7 +2,7 @@
 	 background: rgb(171,221,198);
 }
 #registry-svg {
-	width: 10%;
+	width: 50%;
 }
 .registry-title {
 	  margin-right: 44%;
@@ -10,8 +10,10 @@
 }
 .registry-container {
 	@include outer-container;
+	max-width: 78em !important;
 	.registry-item {
 	@include span-columns(6);
+	padding: 6%;
 	    	@include media($mobile) {
 	      		@include span-columns(4);
 	    	}
@@ -39,4 +41,13 @@
 	margin: 0;
 	font-family: 'Rouge Script', cursive;
 	font-size: 2em;
+}
+.registry-svg svg #bbb, .registry-svg svg #rei {
+	transition: 500ms;
+	transition-timing-function: ease-in-out;
+	-webkit-transition: 500ms;
+	-webkit-transition-timing-function: ease-in-out;	
+}
+.registry-svg svg:hover #bbb, .registry-svg svg #rei:hover {
+	fill: aliceblue;
 }
