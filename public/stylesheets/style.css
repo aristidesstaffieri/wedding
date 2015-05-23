@@ -257,6 +257,9 @@ input {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
+  @media screen and (min-width: 1500px) {
+    .wedding-title-container {
+      max-width: 90em !important; } }
   .wedding-title-container::after {
     clear: both;
     content: "";
@@ -511,6 +514,28 @@ input {
 .wedding-link {
   color: #af78c7; }
 
+.error-success-message {
+  display: inline-block;
+  padding-top: 23px; }
+
+.message {
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  -moz-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  -o-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s; }
+
+.error {
+  color: #dc322f; }
+
+.success {
+  color: #2aa198; }
+
+.message.ng-hide {
+  opacity: 0; }
+
+.message.ng-hide-add, .message.ng-hide-remove {
+  display: inline-block !important; }
+
 #rsvp-section {
   background: aliceblue; }
 
@@ -550,6 +575,9 @@ body {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 1500px) {
+    .wedding-info-container {
+      max-width: 90em !important; } }
   .wedding-info-container .rsvp-form-container {
     float: left;
     display: block;
@@ -730,6 +758,9 @@ input:focus {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 1500px) {
+    .registry-container {
+      max-width: 90em !important; } }
   .registry-container .registry-item {
     float: left;
     display: block;
@@ -775,5 +806,5 @@ input:focus {
   -webkit-transition: 500ms;
   -webkit-transition-timing-function: ease-in-out; }
 
-.registry-svg svg:hover #bbb, .registry-svg svg #rei:hover {
+.registry-svg svg:hover #bbb, .registry-svg svg #rei:hover path {
   fill: aliceblue; }

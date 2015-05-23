@@ -3,7 +3,7 @@
 /* Home Ctrl */
 var $j = jQuery.noConflict();
 
-angular.module('smsTest')
+angular.module('stidesAndMo')
 .controller('IndexCtrl', ['$scope', '$location',
 	function ($scope,  $location) {
 
@@ -45,12 +45,6 @@ angular.module('smsTest')
 			s.append(f.select('defs'));
 		});
 
-		var rsvp = Snap('#rsvp-svg');
-		Snap.load('./img/rsvp-section-icon.svg', function(f) {
-			rsvp.append(f.select('g'));
-			rsvp.append(f.select('defs'));
-		});
-
 		var accomodations = Snap('#accomodations-svg');
 		Snap.load('./img/accomodations-section-icon.svg', function(f) {
 			accomodations.append(f.select('g'));
@@ -61,28 +55,6 @@ angular.module('smsTest')
 		Snap.load('./img/registry-section-icon.svg', function(f) {
 			registry.append(f.select('g'));
 			registry.append(f.select('defs'));
-		});
-
-		// RSVP, make controller
-
-		$j(function(){
-			var onClass = "on";
-			var showClass = "show";
-			
-			$j("input").bind("checkval",function(){
-				var label = $j(this).prev("label");
-				if(this.value !== ""){
-					label.addClass(showClass);
-				} else {
-					label.removeClass(showClass);
-				}
-			}).on("keyup",function(){
-				$j(this).trigger("checkval");
-			}).on("focus",function(){
-				$j(this).prev("label").addClass(onClass);
-			}).on("blur",function(){
-				$j(this).prev("label").removeClass(onClass);
-			}).trigger("checkval");
 		});
 
 

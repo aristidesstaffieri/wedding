@@ -8,9 +8,12 @@
 
 //Global vars
 $break-small: 768px;
+$break-xl: 1500px;
 $golden-ratio: 1.618;
 $modular-scale-ratio: $golden-ratio;
 $modular-scale-base: 1.2em;
+$error: #dc322f;
+$success: #2aa198;
 
 $bride-purple: #7B1FA2;
 
@@ -99,6 +102,9 @@ input {
 .wedding-title-container {
   padding-top: 20px;
   max-width: 78em !important;
+  @media screen and (min-width: $break-xl) {
+         max-width: 90em !important;
+    }
   @include outer-container;
   .wedding-title {
     @include span-columns(9);

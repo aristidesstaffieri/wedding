@@ -31,6 +31,9 @@ body {
 .wedding-info-container {
   @include outer-container;
   max-width: 78em;
+  @media screen and (min-width: $break-xl) {
+         max-width: 90em !important;
+    }
   padding-top: 20px;
   padding-bottom: 30px;
   .rsvp-form-container {

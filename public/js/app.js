@@ -1,8 +1,9 @@
 'use strict';
 
-angular.module('smsTest', [
+angular.module('stidesAndMo', [
 	'ngRoute',
-	'firebase'
+	'firebase',
+	'ngAnimate'
 ])
 .constant('FIREBASE_URL', 'https://moandstides.firebaseio.com/')
 .config(['$routeProvider', '$locationProvider', '$logProvider', 

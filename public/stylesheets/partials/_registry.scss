@@ -11,6 +11,9 @@
 .registry-container {
 	@include outer-container;
 	max-width: 78em !important;
+	@media screen and (min-width: $break-xl) {
+	         max-width: 90em !important;
+	    }
 	.registry-item {
 	@include span-columns(6);
 	padding: 6%;
@@ -48,6 +51,6 @@
 	-webkit-transition: 500ms;
 	-webkit-transition-timing-function: ease-in-out;	
 }
-.registry-svg svg:hover #bbb, .registry-svg svg #rei:hover {
+.registry-svg svg:hover #bbb, .registry-svg svg #rei:hover path {
 	fill: aliceblue;
 }

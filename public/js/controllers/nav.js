@@ -3,7 +3,7 @@
 /* Home Ctrl */
 var $j = jQuery.noConflict();
 
-angular.module('smsTest')
+angular.module('stidesAndMo')
 .controller('NavCtrl', ['$scope',
 	function ($scope) {
 
