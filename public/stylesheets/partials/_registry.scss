@@ -16,7 +16,8 @@
 	    }
 	.registry-item {
 	@include span-columns(6);
-	padding: 6%;
+	padding: 10%;
+  	padding-top: 0;
 	    	@include media($mobile) {
 	      		@include span-columns(4);
 	    	}

@@ -279,6 +279,12 @@ input {
     margin-top: 20px; }
     .wedding-title-container #wedding-svg-container:last-child {
       margin-right: 0; }
+    @media screen and (min-width: 1500px) {
+      .wedding-title-container #wedding-svg-container {
+        margin-top: 40px; } }
+    @media screen and (min-width: 1700px) {
+      .wedding-title-container #wedding-svg-container {
+        margin-top: 60px; } }
   .wedding-title-container #rsvp-svg-container {
     float: left;
     display: block;
@@ -290,6 +296,13 @@ input {
     @media screen and (max-width: 768px) {
       .wedding-title-container #rsvp-svg-container {
         margin-top: 10px; } }
+  @media screen and (max-width: 768px) and (min-width: 1500px) {
+    .wedding-title-container #rsvp-svg-container {
+      margin-top: 20px; } }
+  @media screen and (max-width: 768px) and (min-width: 1700px) {
+    .wedding-title-container #rsvp-svg-container {
+      margin-top: 60px; } }
+
   .wedding-title-container #accomodations-svg-container {
     float: left;
     display: block;
@@ -301,6 +314,12 @@ input {
     @media screen and (max-width: 768px) {
       .wedding-title-container #accomodations-svg-container {
         margin-top: 10px; } }
+    @media screen and (min-width: 1500px) {
+      .wedding-title-container #accomodations-svg-container {
+        margin-top: 40px; } }
+    @media screen and (min-width: 1700px) {
+      .wedding-title-container #accomodations-svg-container {
+        margin-top: 60px; } }
   .wedding-title-container #registry-svg-container {
     float: left;
     display: block;
@@ -312,6 +331,12 @@ input {
     @media screen and (max-width: 768px) {
       .wedding-title-container #registry-svg-container {
         margin-top: 15px; } }
+    @media screen and (min-width: 1500px) {
+      .wedding-title-container #registry-svg-container {
+        margin-top: 70px; } }
+    @media screen and (min-width: 1700px) {
+      .wedding-title-container #registry-svg-container {
+        margin-top: 100px; } }
 
 .centered-navigation {
   background-color: #fff;
@@ -766,7 +791,8 @@ input:focus {
     display: block;
     margin-right: 2.12766%;
     width: 48.93617%;
-    padding: 6%; }
+    padding: 10%;
+    padding-top: 0; }
     .registry-container .registry-item:last-child {
       margin-right: 0; }
     @media screen and (max-width: 500px) {
