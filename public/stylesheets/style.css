@@ -199,17 +199,30 @@ html {
 p, input, label, select {
   font-family: 'Montserrat', sans-serif; }
 
-.landing-section {
-  background: url(../../img/wedding.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 1000px; }
-  @media screen and (max-width: 768px) {
-    .landing-section {
-      background: url(../../img/wedding-small.jpg) no-repeat center top fixed;
-      min-height: 740px; } }
+@media screen and (max-width: 768px) {
+  .landing-section {
+    background: url(../../img/wedding-small.jpg) no-repeat center;
+    min-height: 600px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+@media screen and (min-width: 525px) {
+  .landing-section {
+    background: url(../../img/wedding-mid.jpg) no-repeat center top;
+    min-height: 600px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+@media screen and (min-width: 700px) {
+  .landing-section {
+    background: url(../../img/wedding.jpg) no-repeat center top fixed;
+    min-height: 1000px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
 
 .scroll-on-page {
   display: inline-block; }
